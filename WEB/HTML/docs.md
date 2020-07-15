@@ -55,7 +55,7 @@ Eg;
 - Elements of Flow set can have elements of Phrasing set as nesting.
 - But elements of Phrasing set cannot have elements of Flow set as nesting.
 
-<img src="content-models.png">
+<img src="content-models.png" width=400>
 
 ## HTML Document Structure
 
@@ -92,3 +92,5 @@ Notes:
 - not a mandatory structure
 - helps better structuring and understanding contents
 - may help in SEO
+
+[HTML is processed sequentially fro top-to-bottom]
