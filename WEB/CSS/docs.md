@@ -94,6 +94,10 @@ div #button {
 
 ### HOW TO SELECT
 
+Single element selection:
+
+- separated by `space`
+
 ```
 /* space between selectors */
 
@@ -102,7 +106,11 @@ div #red {
     selects any elements having id 'red' inside div
   */
 }
+```
 
+- chaining without space defines same element
+
+```
 
 /* no space between selectors */
 
@@ -110,6 +118,16 @@ div#red {
   /*
     selects div elements having id 'red'
   */
+}
+```
+
+Group selection:
+
+- seperated by `,`
+
+```
+div, #container, .wrapper {
+  /* ... */
 }
 ```
 
