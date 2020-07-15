@@ -2,7 +2,7 @@
 
 <b>HT</b> - HyperText: Text document having references to other text documents.
 
-<b>M</b> - Markup: Processing, defining & presentation of text
+<b>M</b> - Markup: Processing, defining & presentation of data
 
 <b>L</b> - Language: Syntactical writings
 
@@ -66,18 +66,23 @@ Eg;
       </head>
     <body>
       <header>
-        <nav></nav>
+        <nav>
+          <!-- Navigation Menu -->
+        </nav>
       </header>
 
       <section>
         <article>
+          <!-- Contents -->
         </article>
       </section>
 
       <aside>
+        <!-- Side Bar -->
       </aside>
 
       <footer>
+        <!-- Page Footer -->
       </footer>
     </body>
     </html>
@@ -85,5 +90,5 @@ Eg;
 Notes:
 
 - not a mandatory structure
-- helps better structure and understand contents
+- helps better structuring and understanding contents
 - may help in SEO
