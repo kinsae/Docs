@@ -56,7 +56,7 @@ h1 {
 }
 ```
 
-#### 2. Id Selector
+#### 2. Id Selector ( # )
 
 - select by element id
 - `#` is the prefix
@@ -67,13 +67,35 @@ h1 {
 }
 ```
 
-#### 3. Class Selector
+#### 3. Class Selector ( . )
 
 - select by element class
 - `.` is the prefix
 
 ```
 .container {
+  /* ... */
+}
+```
+
+#### 4. All Selector ( \* )
+
+- selects all html elements of a document
+
+```
+* {
+  /* ... */
+}
+```
+
+#### 4. Document Root Selector ( :root )
+
+- `:root` targets the highest-level parent element in the DOM
+- in HTML document, `html` is the highest-level parent
+- so, `:root` denotes to `html` element
+
+```
+:root {
   /* ... */
 }
 ```
