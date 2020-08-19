@@ -8,9 +8,9 @@
 - better for quick testing
 - not recommended in production
 
-```
-<p style="color: red;"> ... </p>
-```
+  ```
+  <p style="color: red;"> ... </p>
+  ```
 
 #### 2. Head Style
 
@@ -18,15 +18,15 @@
 - uses `<style>` tag
 - used to override external styles
 
-```
-<head>
-  <style>
-    p {
-      color: red;
-    }
-  </style>
-</head>
-```
+  ```
+  <head>
+    <style>
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  ```
 
 #### 3. External Style
 
@@ -34,11 +34,11 @@
 - linked using `<link>` tag inside `<head>`
 - preferred way
 
-```
-<head>
-  <link rel="stylesheet" href="styles.css">
-<head>
-```
+  ```
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  <head>
+  ```
 
 ### SELECTORS
 
@@ -46,112 +46,112 @@
 
 - select by element name
 
-```
-p {
-  /* ... */
-}
+  ```
+  p {
+    /* ... */
+  }
 
-h1 {
-  /* ... */
-}
-```
+  h1 {
+    /* ... */
+  }
+  ```
 
 #### 2. Id Selector ( # )
 
 - select by element id
 - `#` is the prefix
 
-```
-#paragraph {
-  /* ... */
-}
-```
+  ```
+  #paragraph {
+    /* ... */
+  }
+  ```
 
 #### 3. Class Selector ( . )
 
 - select by element class
 - `.` is the prefix
 
-```
-.container {
-  /* ... */
-}
-```
+  ```
+  .container {
+    /* ... */
+  }
+  ```
 
 #### 4. All Selector ( \* )
 
 - selects all html elements of a document
 
-```
-* {
-  /* ... */
-}
-```
+  ```
+  * {
+    /* ... */
+  }
+  ```
 
 #### 4. Document Root Selector ( :root )
 
 - `:root` targets the highest-level parent element in the DOM
 - in HTML document, `html` is the highest-level parent
-- so, `:root` denotes to `html` element
+- so, `:root` refers to `html` element
 
-```
-:root {
-  /* ... */
-}
-```
+  ```
+  :root {
+    /* ... */
+  }
+  ```
 
 ### COMBINED SELECTOR
 
 - elements can be selected using combined selectors
 
-```
-div #button {
-  /* ... */
-}
+  ```
+  div #button {
+    /* ... */
+  }
 
-.section #button label {
-  /* ... */
-}
-```
+  .section #button label {
+    /* ... */
+  }
+  ```
 
 ### HOW TO SELECT
 
 Single element selection:
 
-- separated by `space`
+1. separated by `space`
 
-```
-/* space between selectors */
+   ```
+   /* space between selectors */
 
-div #red {
-  /*
-    selects any elements having id 'red' inside div
-  */
-}
-```
+   div #red {
+     /*
+       selects any elements having id 'red' inside div
+     */
+   }
+   ```
 
-- chaining without space defines same element
+2. chaining without space defines same element
 
-```
+   ```
 
-/* no space between selectors */
+   /* no space between selectors */
 
-div#red {
-  /*
-    selects div elements having id 'red'
-  */
-}
-```
+   div#red {
+     /*
+       selects div elements having id 'red'
+     */
+   }
+   ```
 
 Group selection:
 
 - seperated by `,`
 
-```
-div, #container, .wrapper {
-  /* ... */
-}
-```
+  ```
+  div, #container, .wrapper {
+    /* ... */
+  }
+  ```
 
 ### STYLE PRIORITY
 
@@ -159,22 +159,22 @@ div, #container, .wrapper {
 
 - last declaration gets priority
 
-```
-<head>
-  <link rel="stylesheet" href="styles.css">  <!-- first -->
+  ```
+  <head>
+    <link rel="stylesheet" href="styles.css">  <!-- first -->
 
-  <style>
-    p {
-      color: red;   <!-- second -->
-    }
-  </style>
-<head>
-<body>
+    <style>
+      p {
+        color: red;   <!-- second -->
+      }
+    </style>
+  <head>
+  <body>
 
-  <p style="color: blue;"> ... </p>    <!-- last -->
+    <p style="color: blue;"> ... </p>    <!-- last -->
 
-</body>
-```
+  </body>
+  ```
 
 Output:
 
@@ -186,22 +186,22 @@ p will have blue color
 
 - styling same element at different level gets merged
 
-```
-<head>
-  <style>
-    p {
-      padding: 10px;
-      color: red;
-    }
-  </style>
-<head>
-<body>
+  ```
+  <head>
+    <style>
+      p {
+        padding: 10px;
+        color: red;
+      }
+    </style>
+  <head>
+  <body>
 
-  <p style="color: blue;"> ... </p>    <!-- last -->
+    <p style="color: blue;"> ... </p>    <!-- last -->
 
-</body>
+  </body>
 
-```
+  ```
 
 Output Style:
 
@@ -216,21 +216,21 @@ p {
 
 - most of the parent styles are inherited to all child and grandchild elements
 
-```
-<head>
-  <style>
-    body{
-      color: blue;
-    }
-    p {
-      padding: 10px;
-    }
-  </style>
-<head>
-<body>
-  <p> ... </p>
-</body>
-```
+  ```
+  <head>
+    <style>
+      body{
+        color: blue;
+      }
+      p {
+        padding: 10px;
+      }
+    </style>
+  <head>
+  <body>
+    <p> ... </p>
+  </body>
+  ```
 
 Output
 
