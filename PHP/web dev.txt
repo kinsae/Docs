@@ -1,0 +1,17 @@
+- prevent HTML injection [ using htmlentities() while echo data from php]
+- prevent SQL injection [ using PDO prepared statement ]
+- Abstract error message in production  [try catch, PDO error mode]
+- Request/Response Cycle [GET, POST]
+- Super globals [$_GET[], $_POST[], $_REQUEST[], $_SESSION, $_COOKIES]
+
+- POST/Redirect/GET Pattern (always redirect POST request to GET repuest 
+  after submit to prevent double data submission)
+  Implement using: SESSION - store errors, mesdsages, form data in SESSION in order to 
+			     retrieve them after GET redirect
+
+- Flash Messages (display once, remove on refresh)
+- Cookeies are stored in browser. cookies sent to server with every request
+- Sessions are stored in server. starting session creates session cookie in the browser
+
+- JQuery AJAX-asynchronous javascript xml
+- JQuery text input autocomplete
