@@ -2,7 +2,7 @@
 - prevent SQL injection [ using PDO prepared statement ]
 - Abstract error message in production  [try catch, PDO error mode]
 - Request/Response Cycle [GET, POST]
-- Super globals [$_GET[], $_POST[], $_REQUEST[], $_SESSION, $_COOKIES]
+- Super globals [$_GET[], $_POST[], $_REQUEST[], $_SESSION, $_COOKIE]
 
 - POST/Redirect/GET Pattern (always redirect POST request to GET repuest 
   after submit to prevent double data submission)
